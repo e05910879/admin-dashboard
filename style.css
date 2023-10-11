@@ -64,6 +64,10 @@
     gap: calc(var(--gap) / 3);
 }
 
+.project-header {
+    font-weight: bold;
+}
+
 .cards {
     display: grid;
     gap: var(--gap);
@@ -99,5 +103,37 @@
 }
 
 .announcements {
-    
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: calc(var(--gap) / 3);
+}
+
+.announcements-header {
+    font-weight: bold;
+}
+
+.a-cards {
+    box-sizing: border-box;
+    background: lightgray;
+    border-radius: 8px;
+    border-width: 0px var(--padding);
+    border-style: solid;
+    border-color: white;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1.5px;
+}
+
+.a-card {
+    background-color: white;
+    padding: var(--padding) 0px;
+}
+
+.a-title {
+    font-weight: bold;
+}
+
+.a-content {
+    color: gray;
 }
