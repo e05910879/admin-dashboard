@@ -36,6 +36,7 @@ a {
 
     padding: var(--padding);
     background-color: rgb(65	145	206	);
+    font-weight: 500;
 }
 
 .sb-section {
@@ -246,3 +247,6 @@ button {
     border-radius: 24px;
 }
 
+.first-link {
+    font-size: 1.5rem;
+}
