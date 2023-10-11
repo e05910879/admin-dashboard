@@ -123,6 +123,8 @@
     display: grid;
     grid-auto-rows: max-content;
     gap: 1.5px;
+
+    box-shadow: 3px 5px 5px lightgray;
 }
 
 .a-card {
@@ -138,3 +140,34 @@
     color: gray;
 }
 
+.trending {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: calc(var(--gap) / 3);   
+}
+
+.trending-header {
+    font-weight: bold;
+}
+
+.profiles {
+    background: white;
+    border-radius: 8px;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: var(--gap);
+    padding: var(--padding);
+
+    box-shadow: 3px 5px 5px lightgray;    
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    gap: var(--gap);
+}
+
+.profile-subtitle {
+    color: gray;
+}
