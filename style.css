@@ -11,6 +11,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .dashboard {
     display: grid;
     grid-template: 150px 1fr / 250px auto;
@@ -171,3 +176,73 @@
 .card, .a-card, .profile {
     font-size: 0.9rem;
 }
+
+.header {
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr;
+    padding: var(--padding);
+
+    gap: var(--gap);
+}
+
+.search {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: calc(var(--gap)/2);
+}
+.search-bar {
+    display: grid;
+    align-items: start;
+    justify-items: stretch;
+}
+input {
+    width: 70%;
+    background-color: rgb(227	232	239	);
+    border: none;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.notifications {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: calc(var(--gap)/2);
+
+    justify-content: end;
+}
+.user-name {
+    font-weight: 600;
+}
+
+.greetings {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    gap: calc(var(--gap)/2);
+}
+.greeting {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.g-user-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    gap: var(--gap);
+    justify-content: end;
+}
+button {
+    height: 32px;
+    width: 80px;
+    padding: 0px;
+    font-weight: 500;
+    color: white;
+    border-color: rgb(65	145	206	);
+    background-color: rgb(65	145	206	);
+    border-style: none;
+    border-radius: 24px;
+}
+
