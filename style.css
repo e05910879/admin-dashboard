@@ -103,7 +103,7 @@ a {
     display: grid;
 
     grid-template-columns: repeat(3,max-content);
-    gap: calc(0.8*var(--gap));
+    gap: calc(0.5*var(--gap));
     justify-content: end;
 }
 
@@ -249,4 +249,12 @@ button {
 
 .first-link {
     font-size: 1.5rem;
+}
+
+.main-content button {
+    width: 30px;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
